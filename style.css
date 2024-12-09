@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#stranky{
+    display: block;
+}
+
+.strana_viditelna{
+    display: block;
+
+}
+
+.strana_off {
+    display: none;
+}
+#button{
+    padding: 50px;
+}
+
+#button2{
+    padding: 50px;
+}

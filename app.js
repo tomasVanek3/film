@@ -9,3 +9,25 @@ if ('serviceWorker' in navigator) {
             });
     });
 }
+
+function ZobrazNastaveni(){
+    document.getElementById("main").className = "strana_off";
+    document.getElementById("nastaveni_stranka").className = "strana_viditelna";
+}
+
+function Zpet(){
+    document.getElementById("main").className = "strana_viditelna";
+    document.getElementById("nastaveni_stranka").className = "strana_off";
+}
+
+function save(){
+    let hodnota = document.getElementById("zadavatel_filmu").value
+
+    if(hodnota === ""){
+        document.getElementById("p").innerText = "Parametr nebyl zadán";
+    }
+    else{
+        document.getElementById("text1").innerText = "Tvůj nejoblíbenější film: " + hodnota
+        document.getElementById("p").innerText = "Parametr byl úspěšně uložen";
+    }
+}

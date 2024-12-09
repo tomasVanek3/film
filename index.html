@@ -9,6 +9,33 @@
     <title>Film</title>
 </head>
 <body>
-    
+        <div id="main" class="strana_viditelna">
+            <div id="text1">
+                Tvůj nejoblíbenější film: Žádný film nebyl zvolen
+            </div>
+            <div id="button">
+                <form>
+                    <button type="button" id="nastaveni" onclick="ZobrazNastaveni()">Nastavení</button>
+                </form>
+            </div>
+        </div>
+        <div id="nastaveni_stranka" class="strana_off">
+            <div>
+                Zadej jméno filmu: 
+                <form>
+                    <input type="text" id="zadavatel_filmu">
+                </form>
+            </div>
+            <div id="button2">
+                <form>
+                    <button type="button" onclick="Zpet()">Zpět</button> <button type="button" onclick="save()">Uložit</button>
+                </form>
+            </div>
+            <div>
+                <p id="p">
+
+                </p>
+            </div>
+        </div>
 </body>
 </html>
