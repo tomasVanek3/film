@@ -29,5 +29,6 @@ function save(){
     else{
         document.getElementById("text1").innerText = "Tvůj nejoblíbenější film: " + hodnota
         document.getElementById("p").innerText = "Parametr byl úspěšně uložen";
+        document.getElementById("zadavatel_filmu").value = "";
     }
 }

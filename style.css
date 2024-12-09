@@ -6,16 +6,21 @@ body {
 }
 
 #stranky{
-    display: block;
+    display: flex;
+    
 }
 
 .strana_viditelna{
     display: block;
-
+    border: 3px black solid;
+    padding: 5px;
+    
 }
 
 .strana_off {
     display: none;
+    border: 3px black solid;
+    padding: 5px;
 }
 #button{
     padding: 50px;
