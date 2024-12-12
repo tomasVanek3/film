@@ -18,6 +18,7 @@ function ZobrazNastaveni(){
 function Zpet(){
     document.getElementById("main").className = "strana_viditelna";
     document.getElementById("nastaveni_stranka").className = "strana_off";
+    document.getElementById("p").innerText = "";
 }
 
 function save(){
@@ -27,7 +28,9 @@ function save(){
         document.getElementById("p").innerText = "Parametr nebyl zadán";
     }
     else{
-        document.getElementById("text1").innerText = "Tvůj nejoblíbenější film: " + hodnota
+        sessionStorage.setItem("key", hodnota);
+        let jmenoFilmu = sessionStorage.getItem("key");
+        document.getElementById("text1").innerText = "Tvůj nejoblíbenější film: " + jmenoFilmu
         document.getElementById("p").innerText = "Parametr byl úspěšně uložen";
         document.getElementById("zadavatel_filmu").value = "";
     }
